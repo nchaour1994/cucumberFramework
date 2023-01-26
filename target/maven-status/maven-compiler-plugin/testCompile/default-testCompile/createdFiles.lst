@@ -1,0 +1,7 @@
+stepDefinitions\BaseClass.class
+org\example\AppTest.class
+stepDefinitions\Steps.class
+pageObject\RegisterPage.class
+runner\TestRunner.class
+pageObject\HomePage.class
+pageObject\LoginPage.class
