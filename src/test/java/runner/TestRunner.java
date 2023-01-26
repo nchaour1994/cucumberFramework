@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions",
         dryRun = false,
         plugin={"pretty","html:test-output.html"},
-        tags = "@regression"
+        tags= "@sanity or @regression"
 )
 public class TestRunner {
 

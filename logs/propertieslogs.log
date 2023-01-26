@@ -210,3 +210,38 @@
 [INFO ] 2023-01-26 11:15:15.429 [main] BaseClass - enter password
 [INFO ] 2023-01-26 11:15:15.608 [main] BaseClass - sing in button clicked
 [INFO ] 2023-01-26 11:15:15.608 [main] BaseClass - driver closed
+[INFO ] 2023-01-26 11:46:57.392 [main] BaseClass - open browser
+[INFO ] 2023-01-26 11:47:02.102 [main] BaseClass - home page appeared
+[INFO ] 2023-01-26 11:47:03.333 [main] BaseClass - button clicked
+[INFO ] 2023-01-26 11:47:03.440 [main] BaseClass - dropdown displayed
+[INFO ] 2023-01-26 11:47:14.078 [main] BaseClass - register button clicked
+[INFO ] 2023-01-26 11:47:15.467 [main] BaseClass - enter user
+[INFO ] 2023-01-26 11:47:15.629 [main] BaseClass - last nem entred
+[INFO ] 2023-01-26 11:47:15.774 [main] BaseClass - email entred
+[INFO ] 2023-01-26 11:47:15.935 [main] BaseClass - password entred
+[INFO ] 2023-01-26 11:47:16.168 [main] BaseClass - box checked
+[INFO ] 2023-01-26 11:47:29.441 [main] BaseClass - open browser
+[INFO ] 2023-01-26 11:47:37.884 [main] BaseClass - home page appeared
+[INFO ] 2023-01-26 11:47:38.139 [main] BaseClass - button clicked
+[INFO ] 2023-01-26 11:47:38.332 [main] BaseClass - dropdown displayed
+[INFO ] 2023-01-26 11:47:52.260 [main] BaseClass - register button clicked
+[INFO ] 2023-01-26 11:47:53.465 [main] BaseClass - enter user
+[INFO ] 2023-01-26 11:47:53.607 [main] BaseClass - last nem entred
+[INFO ] 2023-01-26 11:47:53.760 [main] BaseClass - email entred
+[INFO ] 2023-01-26 11:47:53.944 [main] BaseClass - password entred
+[INFO ] 2023-01-26 11:47:54.184 [main] BaseClass - box checked
+[INFO ] 2023-01-26 11:48:31.863 [main] BaseClass - open browser
+[INFO ] 2023-01-26 11:48:32.112 [main] BaseClass - enter user
+[INFO ] 2023-01-26 11:48:32.360 [main] BaseClass - enter password
+[INFO ] 2023-01-26 11:48:32.508 [main] BaseClass - sing in button clicked
+[INFO ] 2023-01-26 11:48:32.509 [main] BaseClass - driver closed
+[INFO ] 2023-01-26 11:48:53.972 [main] BaseClass - open browser
+[INFO ] 2023-01-26 11:48:54.218 [main] BaseClass - enter user
+[INFO ] 2023-01-26 11:48:54.405 [main] BaseClass - enter password
+[INFO ] 2023-01-26 11:48:54.568 [main] BaseClass - sing in button clicked
+[INFO ] 2023-01-26 11:48:54.568 [main] BaseClass - driver closed
+[INFO ] 2023-01-26 11:48:59.849 [main] BaseClass - open browser
+[INFO ] 2023-01-26 11:49:00.032 [main] BaseClass - enter user
+[INFO ] 2023-01-26 11:49:00.360 [main] BaseClass - enter password
+[INFO ] 2023-01-26 11:49:00.497 [main] BaseClass - sing in button clicked
+[INFO ] 2023-01-26 11:49:00.498 [main] BaseClass - driver closed
