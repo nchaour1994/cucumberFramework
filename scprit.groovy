@@ -13,6 +13,7 @@ pipeline {
             steps {
                 echo 'compile'
 //                bat "mvn compile"
+                bat "mvn test"
 
             }
         }
@@ -20,7 +21,7 @@ pipeline {
             steps {
                 echo 'test'
 //                bat "mvn test"
-                junit 'TestRunner.java'
+                junit 'TEST-runner.TestRunner.xml'
             }
         }
     }
