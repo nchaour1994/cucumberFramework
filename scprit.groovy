@@ -37,18 +37,16 @@ pipeline {
         }
         stage('Example') {
             steps {
-                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                echo "${env.BUILD_ID} and ${env.JOB_NAME}"
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                    echo "${env.BUILD_ID} and ${env.JOB_NAME}"
+                }
             }
         }
         stage('report') {
             steps {
-                post {
-                    always {
-                        cucumber '**/cucumber.json'
-                    }
-
-
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    cucumber fileIncludePattern: '**/cucumber.json'
                 }
             }
         }
