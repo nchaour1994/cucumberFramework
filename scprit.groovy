@@ -20,7 +20,7 @@ pipeline {
             steps {
                 echo 'test'
 //                bat "mvn test"
-                testng '**/target/*.xml'
+                junit '**/target/*.xml'
             }
         }
     }
