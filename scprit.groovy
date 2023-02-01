@@ -19,9 +19,11 @@ pipeline {
         }
         stage('test') {
             steps {
-                echo 'test'
-                bat "mvn test"
-                //  junit '**/target/*.xml'
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                    echo 'test'
+                    bat "mvn test"
+                    //  junit '**/target/*.xml'
+                }
             }
         }
         stage('Deploy') {
@@ -37,17 +39,14 @@ pipeline {
         }
         stage('Example') {
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
-                    echo "${env.BUILD_ID} and ${env.JOB_NAME}"
-                }
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "${env.BUILD_ID} and ${env.JOB_NAME}"
             }
         }
         stage('report') {
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    cucumber fileIncludePattern: '**/cucumber.json'
-                }
+
+                cucumber fileIncludePattern: '**/cucumber.json'
             }
         }
     }
