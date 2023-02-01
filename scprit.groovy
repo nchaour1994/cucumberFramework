@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-             //   bat "make"
+                //   bat "make"
                 echo 'clean'
                 bat "mvn clean"
             }
@@ -12,16 +12,26 @@ pipeline {
         stage('compile') {
             steps {
                 echo 'compile'
-//                bat "mvn compile"
-                bat "mvn test"
+                bat "mvn compile"
+
 
             }
         }
         stage('test') {
             steps {
                 echo 'test'
-//                bat "mvn test"
-                junit '**/target/*.xml'
+                bat "mvn test"
+                //  junit '**/target/*.xml'
+            }
+        }
+        stage('Deploy') {
+            when {
+                expression {
+                    currentBuild.result == null || currentBuild.result == 'SUCCESS'
+                }
+            }
+            steps {
+                bat 'make publish'
             }
         }
     }
