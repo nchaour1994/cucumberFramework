@@ -31,7 +31,14 @@ pipeline {
                 }
             }
             steps {
-                bat 'mvn deploy'
+                echo 'deploy'
+               // bat 'mvn deploy'
+            }
+        }
+        stage('Example') {
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+                echo "${env.BUILD_ID} and ${env.JOB_NAME}"
             }
         }
     }
