@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'test'
 //                bat "mvn test"
-                junit 'TEST-runner.TestRunner.xml'
+                junit '**/target/*.xml'
             }
         }
     }
