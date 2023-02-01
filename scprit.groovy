@@ -31,7 +31,7 @@ pipeline {
                 }
             }
             steps {
-                bat 'make publish'
+                bat 'mvn deploy'
             }
         }
     }
