@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+             //   bat "make"
                 echo 'clean'
                 bat "mvn clean"
             }
@@ -11,13 +12,15 @@ pipeline {
         stage('compile') {
             steps {
                 echo 'compile'
-                bat "mvn compile"
+//                bat "mvn compile"
+
             }
         }
         stage('test') {
             steps {
                 echo 'test'
-                bat "mvn test"
+//                bat "mvn test"
+                testng '**/target/*.xml'
             }
         }
     }
