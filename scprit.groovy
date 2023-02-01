@@ -43,7 +43,7 @@ pipeline {
         }
         stage('report'){
             steps{
-                cucumber fileIncludePattern: '**/cucumber.json', buildStatus: 'FAILURE'
+                cucumber fileIncludePattern: '**/cucumber.json'
             }
         }
     }
