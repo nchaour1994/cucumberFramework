@@ -41,5 +41,12 @@ pipeline {
                 echo "${env.BUILD_ID} and ${env.JOB_NAME}"
             }
         }
+        stage('report'){
+            steps{
+                fileInculdePattern: "**/cucumber.json"
+                jsonReportDirectory:'target'
+
+            }
+        }
     }
 }
