@@ -51,6 +51,6 @@ pipeline {
         }
     }
     post{
-        success {   emailext body: 'here the report ', subject: 'jenkins email', to: 'nchaour6@gmail.com'}
+        success {   emailext attachmentsPattern: '**/cucumber.json', body: 'test', subject: 'job', to: 'nchaour6@gmail.com'}
     }
 }
