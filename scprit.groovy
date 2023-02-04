@@ -46,8 +46,11 @@ pipeline {
         stage('report') {
             steps {
                 cucumber fileIncludePattern: '**/cucumber.json'
-                emailext body: 'here the report ', subject: 'jenkins email', to: 'nchaour6@gmail.com'
+
             }
         }
+    }
+    post{
+        success {   emailext body: 'here the report ', subject: 'jenkins email', to: 'nchaour6@gmail.com'}
     }
 }
