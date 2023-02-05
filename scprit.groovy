@@ -51,7 +51,7 @@ pipeline {
         }
     }
     post{
-        success {   emailext attachmentsPattern: '**/test-output.html', body: 'test', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS', to: 'nchaour6@gmail.com'}
+        success {   emailext attachmentsPattern: 'cucumber-html-reports/.cache/target/cucumber.json', body: 'test', subject: '$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS', to: 'nchaour6@gmail.com'}
         failure {   emailext attachmentsPattern: '**/test-output.html', body: 'test', subject: 'j$PROJECT_NAME - Build # $BUILD_NUMBER - $BUILD_STATUS', to: 'nchaour6@gmail.com'}
     }
 }
